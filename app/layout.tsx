@@ -10,6 +10,7 @@ import { getAllBusinessSchemas, getRootMetadata } from "@/lib/seo";
 import type { Metadata } from "next";
 import { Inter, Poppins } from "next/font/google";
 import "./globals.css";
+import { Analytics } from "@vercel/analytics/react"
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -64,6 +65,7 @@ export default function RootLayout({
         <Footer />
         <FloatingWhatsApp />
         <ScrollToTop />
+        <Analytics />
         <StickyConsultation />
       </body>
     </html>
